@@ -9,7 +9,9 @@
     align-items: center;
     justify-content: space-around;
 }
-
+.logotipo{
+    color: white;
+}
 .menu{
     ul{
         display: flex;
@@ -26,16 +28,3 @@
 
 }
 
-.button{
-    padding: 10px 30px;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: $green-color;
-    border: none;
-    cursor: pointer;
-    transition: 1s;
-    &:hover{
-        background-color: $secondGreen-color;
-    }
-}

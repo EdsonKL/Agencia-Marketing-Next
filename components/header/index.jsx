@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styles from './header.module.scss'
+import { Button } from '../button'
 
 export const Header = () => {
     return(
@@ -13,9 +14,7 @@ export const Header = () => {
                 </ul>
             </div>
             <div className={styles.action}>
-                <button className={styles.button}>
-                    Fale Conosco
-                </button>
+                <Button title="Fale Conosco" kind="primary"/>
             </div>
         </div>
     )
