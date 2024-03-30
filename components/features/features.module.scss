@@ -24,12 +24,15 @@
 .contFeatures{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 60px;
 }
 .feature{
+    width: 380px;
     background-color: $white-color;
     padding: 35px 30px;
     border-radius: 5px;
+    box-shadow: 5px 5px 20px black;
+
     h1{
         width: auto;
         margin-top: 10px;
