@@ -1,4 +1,6 @@
 @import "/styles/mixins/colors.scss";
+@import "/styles/mixins/responsive.scss";
+
 
 .container{
     padding: 20px 120px;
@@ -9,6 +11,13 @@
     align-items: center;
     justify-content: space-between;
     
+    @include Phone{
+        padding: 20px 30px;
+    }
+    @include Tablet{
+        padding: 20px 30px;
+
+    }
 }
 .logotipo{
     color: white;
@@ -26,6 +35,14 @@
     }
 
     }
+    @include Phone{
+        display: none;
+    }
 
+}
+.action{
+    @include Phone{
+        display: none;
+    }
 }
 

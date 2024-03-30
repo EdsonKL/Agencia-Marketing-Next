@@ -1,4 +1,6 @@
 @import "../../styles/mixins/colors.scss";
+@import "../../styles/mixins/responsive.scss";
+@import "../../styles/mixins/fonts.scss";
 
 
 .input{
@@ -10,4 +12,11 @@
     padding: 10px;
     margin-bottom: 15px;
     background-color: $fourthGray-color;
+    @include Phone{
+        height: 50px;
+        font-size: 16px;
+    }
+    @include Tablet{
+        font-size: 17px;
+    }
 }

@@ -1,0 +1,38 @@
+@import "/styles/mixins/responsive.scss";
+
+
+@mixin SizeExtra{
+    font-size: 50px;
+
+    @include Phone{
+        font-size: 35px;
+    }
+    @include Tablet{
+        font-size: 40px;
+    }
+}
+@mixin SizeLarge{
+    font-size: 38px;
+    @include Phone{
+        font-size: 20px;
+    }
+}
+@mixin SizeMedium{
+    font-size: 30px;
+
+    @include Phone{
+        font-size: 18px;
+    }
+}
+@mixin SizeNormal{
+    font-size: 20px;
+    @include Phone{
+        font-size: 15px;
+    }
+}
+@mixin SizeSmall{
+    font-size: 18px;
+    @include Phone{
+        font-size: 12px;
+    }
+}

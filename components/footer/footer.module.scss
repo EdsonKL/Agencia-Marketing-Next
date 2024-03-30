@@ -1,4 +1,6 @@
 @import "../../styles/mixins/colors.scss";
+@import "../../styles/mixins/fonts.scss";
+@import "../../styles/mixins/responsive.scss";
 
 .container{
     margin-top: 120px;
@@ -6,10 +8,18 @@
     background-color: $secondPurple-color;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    @include Phone{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 50px;
+    }
+    @include Tablet{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+        padding: 30px 30px 5px;
+    }
 }
 
 .column{
-    
     .title{
         margin-bottom: 15px;
         font-size: 29px;
@@ -32,18 +42,48 @@
     img{
         width: 30px;
         height: 30px;
+        @include Phone{
+            width: 40px;
+            height: 40px;
+        }
+        
+    }
+    a{
+        @include Phone{
+            width: 0px;
+            padding: 0;
+            margin: 0;
+        }
     }
     .containerIcons{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 2fr);
+        @include Phone{
+            // padding-bottom: 15px;
+        }
     }
 }
 .alignRight{
     text-align: end;
+    
+    @include Phone{
+        text-align: left;
+        padding-bottom: 15px;
+    }
+    @include Tablet{
+     text-align: start;       
+    }
 }
 .midFooter{
     padding-top: 40px;
     padding-left: 50px;
+    @include Phone{
+        padding: 0;
+        padding-top: 10px;
+    }
+    @include Tablet{
+            padding: 0;
+    }
 }
 
 .allRightReserved{
@@ -52,5 +92,11 @@
     color: $grey-color;
     grid-column: span 4;
     text-align: center;
+    @include Phone{
+        grid-column: 1;
+    }
+    @include Tablet{
+        grid-column: span 2;
+    }
 
 }

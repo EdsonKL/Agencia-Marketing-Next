@@ -1,5 +1,6 @@
 @import "../../styles/mixins/colors.scss";
-
+@import "../../styles/mixins/responsive.scss";
+@import "../../styles/mixins/fonts.scss";
 
 .container{
     display: grid;
@@ -11,30 +12,68 @@
     background-image: url("../../public/images/background-welcome.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    grid-column-start: 2;
+    grid-column-start: 0;
     gap: 15px 100px ;
+    @include Phone{
+        gap: 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+        padding-top: 30px;
+        background-size: contain;
+        background-position: 0px 130px;
+    }
+    @include Tablet{
+        gap: 0;
+        padding: 60px 40px;
+
+    }
 }
 
 .texts{
-    height: 450px;
+    height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include Phone{
+        padding-top: 40px;
+        margin-bottom: 50px;
+    }
+    @include Tablet{
+        max-width: 400px;
+    }
     span{
         font-size: 20px;
         font-weight: 600;
         color: $thirdGreen-color;
         padding-bottom: 10px;
+        @include Tablet{
+            font-size: 18px;
+        }
     }
     h1{
-        font-size: 35px;
+        font-size: 30px;
         font-weight: bold;
         padding-bottom: 20px;
+        @include Phone{
+            font-size: 28px;
+        }
+        @include Tablet{
+            font-size: 22px;
+        }
     }
     p{
         font-size: 20px;
         font-weight: 300;
         opacity: 0.9;
+        @include Phone{
+            font-size: 20px;
+        }
+        @include Tablet{
+            font-size: 15px;
+            width: auto;
+        }
     }
 }
 
@@ -42,7 +81,7 @@
     box-shadow: 5px 5px 20px black;
     border: 0.5 solid $thirdGray-color;
     border-radius: 10px;
-    padding: 25px 20px;
+    padding: 10px 20px;
     background-color: $white-color;
     width: auto;
     height: 450px;
@@ -53,7 +92,7 @@
     h1{
         color: $purple-color;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 25px;
         padding-bottom: 25px;
     }
     select{
@@ -65,12 +104,25 @@
         padding: 10px;
         margin-bottom: 15px;
         background-color: $fourthGray-color;
+        @include Phone{
+            font-size: 14px;
+        }
+        @include Tablet{
+            font-size: 16px;
+        }
     }
 }
 .footer{
     text-align: center;
     display: grid;
     grid-column-start: 2;
+    @include Phone{
+        padding-top: 20px;
+    }
+    @include Tablet{
+        padding-top: 15px;
+        font-size: 16px;
+    }
     span{
         font-weight: bolder;
     }

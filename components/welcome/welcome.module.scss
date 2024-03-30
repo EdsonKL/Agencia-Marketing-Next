@@ -1,4 +1,7 @@
 @import "../../styles/mixins/colors.scss";
+@import "../../styles/mixins/responsive.scss";
+@import "../../styles/mixins/fonts.scss";
+
 
 .container{
     display: grid;
@@ -10,18 +13,39 @@
     height: 100vh;
     width: 100vw;
     justify-content: center;
+    @include Phone{
+        background-position: 0px 165px;
+        background-size: contain;
+        padding: 40px 40px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        // align-items: center;
+    }
+    @include Tablet{
+        height: 450px;
+        background-size: contain;
+        background-position: 0px 65px;
+        padding: 20px 40px;
+    }
 }
 
 .text{
     color: $white-color;
     padding-top: 1.5em;
+    @include Phone{
+        padding: 20px 60px;
+        justify-content: center;
+        align-items: center;
+        height: 200px
+    }
     h1{
+        @include SizeExtra;
         font-weight: bold;
-        font-size: 50px;
         margin-bottom: 15px;
     }
     p{
-        font-size: 20px;
+        @include SizeNormal;
+        // font-size: 20px;
         margin-bottom: 20px;
         opacity: 0.9;
     }
@@ -29,8 +53,25 @@
 .DivImage{
     display: flex;
     justify-content: end;
+    @include Phone{
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @include Tablet{
+        justify-content: center;
+        // align-items: center;
+    }
 }
 .image {
     height: 20em;
     width: 30em;
+    @include Phone{
+        width: 450px;
+        height: 450px;
+    }
+    @include Tablet{
+        width: 320px;
+
+    }
 }
