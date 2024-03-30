@@ -33,7 +33,11 @@ export const Contact = () => {
                     <Button title='Enviar' kind='full'/>
                 
                 </form>
+
             </div>
+                <div className={styles.footer}>
+                    <p>Ao enviar esse formulário, você reconhece que leu e concorda com a nossa <span>Política de Privacidade</span>.</p>
+                </div>
         </div>
     )
 }
