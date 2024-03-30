@@ -1,0 +1,13 @@
+@import "../../styles/mixins/colors.scss";
+
+
+.input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: $fourthGray-color;
+}
