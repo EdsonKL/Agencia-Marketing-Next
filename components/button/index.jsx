@@ -6,6 +6,9 @@ export const Button = ({ title, kind }) => {
         if (kind === "secondary"){
             return styles.secondary   
         }
+        if (kind === "full"){
+            return styles.full   
+        }
         else{
             return styles.primary
         }
