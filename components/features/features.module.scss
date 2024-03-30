@@ -1,0 +1,48 @@
+@import "../../styles/mixins/colors.scss";
+
+.container{
+    padding: 40px 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h1{
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    p{
+        margin-bottom: 68px;
+        text-align: center;
+        width: 700px;
+        font-size: 20px;
+        opacity: 0.8;
+    }
+}
+.contFeatures{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+.feature{
+    background-color: $white-color;
+    padding: 35px 30px;
+    border-radius: 5px;
+    h1{
+        width: auto;
+        margin-top: 10px;
+        text-align: start;
+        font-weight: bold;
+        font-size: 30px;
+        color: $purple-color;
+    }
+    p{
+        text-align: start;
+        margin-bottom: 0px;
+        width: auto;
+        font-size: 20px;
+        color: $secondGray-color;
+    }
+}
