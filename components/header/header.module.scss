@@ -1,13 +1,14 @@
 @import "/styles/mixins/colors.scss";
 
 .container{
-    padding: 20px;
+    padding: 20px 120px;
     width: 100%;
     background-color: $purple-color;
-    border-bottom: 0.5px solid $grey-color;
+    border-bottom: .3px solid $grey-color;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    
 }
 .logotipo{
     color: white;
@@ -16,7 +17,7 @@
     ul{
         display: flex;
         list-style-type: none;
-        gap: 20px;
+        gap: 24px;
 
     a{
         text-decoration: none;

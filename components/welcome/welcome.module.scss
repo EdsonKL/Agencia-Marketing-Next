@@ -1,9 +1,36 @@
+@import "../../styles/mixins/colors.scss";
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 90px 130px;
+    background-image: url("../../public/images/background-welcome.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
 .text{
+    color: $white-color;
+    padding-top: 1.5em;
     h1{
         font-weight: bold;
-        font-size: 60px;
+        font-size: 50px;
+        margin-bottom: 15px;
     }
     p{
-        font-size: 25px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        opacity: 0.9;
     }
+}
+.DivImage{
+    display: flex;
+    justify-content: end;
+}
+.image {
+    height: 20em;
+    width: 30em;
 }
