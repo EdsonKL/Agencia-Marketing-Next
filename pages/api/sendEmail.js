@@ -2,7 +2,7 @@ import { SMTPClient } from 'emailjs';
 
 
 export default async function handler(req, res) {
-    const {messageBody} = req.body
+    const {messageBody, detailsBody} = req.body
     
     const client = new SMTPClient({
         user: process.env.EMAIL,
@@ -16,8 +16,7 @@ export default async function handler(req, res) {
             text: messageBody,
             from: process.env.EMAIL,
             to: 'edson.mendes.palhares@gmail.com',
-            cc: 'else <else@your-email.com>',
-            subject: 'Lead - LandingPage"',
+            subject: `Lead - nome: ${detailsBody.name}`,
         });
         console.log(message);
     } catch (err) {

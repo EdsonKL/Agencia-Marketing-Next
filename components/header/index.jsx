@@ -1,6 +1,9 @@
+"use client"
+
 import Link from 'next/link'
 import styles from './header.module.scss'
 import { Button } from '../button'
+import { ScrollTo } from '../../utils/scrollTo'
 
 export const Header = () => {
     return(
@@ -14,7 +17,7 @@ export const Header = () => {
                 </ul>
             </div>
             <div className={styles.action}>
-                <Button title="Fale Conosco" kind="primary"/>
+                <Button onClick={() => ScrollTo("contato")} sent ={false} loading={false} title="Fale Conosco" kind="primary"/>
             </div>
         </div>
     )

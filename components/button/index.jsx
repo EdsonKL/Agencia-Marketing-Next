@@ -1,6 +1,7 @@
+"use client"
 import styles from './button.module.scss'
 
-export const Button = ({ title, kind }) => {
+export const Button = ({ onClick ,sent, loading,  title, kind, type }) => {
 
     const buttonKind = () => {
         if (kind === "secondary"){
@@ -14,8 +15,9 @@ export const Button = ({ title, kind }) => {
         }
     }
     return(
-        <button className={`${styles.button} ${buttonKind()}`}>
-            {title}
+        <button onClick={onClick} type={type} className={`${styles.button} ${buttonKind()}`}>
+            
+            {loading == false && sent == false? title : loading == true && sent == false ? "Enviando..." : "Enviado com Sucesso"}
         </button>
     )
 } 
