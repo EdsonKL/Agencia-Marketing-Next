@@ -40,10 +40,10 @@ export const Contact = () => {
     })
 
     const handleSubmit = ({name, email, phone, website, midia}) => {
-        // e.preventDefault()
-        console.log("algo2")
+
         setIsLoading(true)
         setSent(false)
+
         axios.post("/api/sendEmail", {
             detailsBody: {
                 name
