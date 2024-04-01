@@ -2,10 +2,10 @@ import Link from "next/link"
 import styles from "./footer.module.scss"
 import Image from "next/image"
 
-import IconInstagram from '../../public/images/icon-instagram.svg'
-import IconFacebook from '../../public/images/icon-facebook.svg'
-import IconLinkedin from '../../public/images/icon-linkedin.svg'
-import IconYoutube from '../../public/images/icon-youtube.svg'
+import IconInstagram from '../../public/images/icon-instagram.png'
+import IconFacebook from '../../public/images/icon-facebook.png'
+import IconLinkedin from '../../public/images/icon-linkedin.png'
+import IconYoutube from '../../public/images/icon-youtube.png'
 
 export const Footer = () => {
     return (

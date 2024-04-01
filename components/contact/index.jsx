@@ -121,7 +121,7 @@ export const Contact = () => {
                         onChange={formik.handleChange} 
                         required
                     >
-                        <option value="" selected={true} disabled>Orçamento para mídia</option>
+                        <option value="" disabled>Orçamento para mídia</option>
                         <option value="Instragram">Instragram</option>
                         <option value="Facebook">Facebook</option>
                     </select>
