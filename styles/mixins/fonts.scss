@@ -4,6 +4,9 @@
 @mixin SizeExtra{
     font-size: 50px;
 
+    @include PhoneP{
+        font-size: 37px;
+    }
     @include Phone{
         font-size: 35px;
     }

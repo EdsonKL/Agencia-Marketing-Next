@@ -8,6 +8,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include PhoneP{
+        padding: 20px 20px;
+    }
     @include Phone{
         padding: 20px 20px;
     }
@@ -30,6 +33,11 @@
         text-align: center;
         width: 900px;
         opacity: 0.8;
+        @include PhoneP{
+            @include SizeNormal;
+            padding: 0px 0px;
+            width: auto;
+        }
         @include Phone{
             @include SizeNormal;
             padding: 0px 0px;
@@ -45,6 +53,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+    @include PhoneP{
+        grid-template-columns: repeat(1, 1fr);
+    
+        }
     @include Phone{
     grid-template-columns: repeat(1, 1fr);
 
@@ -60,6 +72,9 @@
     border-radius: 5px;
     box-shadow: 5px 5px 20px black;
 
+    @include PhoneP{
+        width: 330px;
+    }
     @include Phone{
         width: 320px;
     }

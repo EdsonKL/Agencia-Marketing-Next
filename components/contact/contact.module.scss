@@ -14,6 +14,16 @@
     background-size: cover;
     grid-column-start: 0;
     gap: 15px 100px ;
+    @include PhoneP{
+        gap: 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 26px;
+        padding-top: 30px;
+        background-size: contain;
+        background-position: 0px 130px;
+    }
     @include Phone{
         gap: 0 0;
         display: flex;
@@ -36,6 +46,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include PhoneP{
+        padding-top: 40px;
+        margin-bottom: 60px;
+    }
     @include Phone{
         padding-top: 40px;
         margin-bottom: 50px;
@@ -94,6 +108,9 @@
         font-weight: bold;
         font-size: 25px;
         padding-bottom: 25px;
+        @include PhoneP{
+            font-size: 23px;
+        }
     }
     select{
         width: 100%;
@@ -116,6 +133,9 @@
     text-align: center;
     display: grid;
     grid-column-start: 2;
+    @include PhoneP{
+        padding-top: 20px;
+    }
     @include Phone{
         padding-top: 20px;
     }

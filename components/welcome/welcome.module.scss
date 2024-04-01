@@ -13,6 +13,14 @@
     height: 100vh;
     width: 100vw;
     justify-content: center;
+    @include PhoneP{
+        height: 730px;
+        background-position: 0px 195px;
+        background-size: contain;
+        padding: 40px 20px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
     @include Phone{
         background-position: 0px 165px;
         background-size: contain;
@@ -32,6 +40,12 @@
 .text{
     color: $white-color;
     padding-top: 1.5em;
+    @include PhoneP{
+        padding: 20px 40px;
+        justify-content: center;
+        align-items: center;
+        height: 260px
+    }
     @include Phone{
         padding: 20px 60px;
         justify-content: center;
@@ -53,6 +67,11 @@
 .DivImage{
     display: flex;
     justify-content: flex-end;
+    @include PhoneP{
+        // display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
     @include Phone{
         // display: flex;
         justify-content: center;
@@ -66,6 +85,10 @@
 .image {
     height: 20em;
     width: 30em;
+    @include PhoneP{
+        width: 420px;
+        height: 320px;
+    }
     @include Phone{
         width: 450px;
         height: 450px;
