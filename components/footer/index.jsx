@@ -1,11 +1,10 @@
 import Link from "next/link"
 import styles from "./footer.module.scss"
 import Image from "next/image"
-
-import IconInstagram from '../../public/images/icon-instagram.png'
-import IconFacebook from '../../public/images/icon-facebook.png'
-import IconLinkedin from '../../public/images/icon-linkedin.png'
-import IconYoutube from '../../public/images/icon-youtube.png'
+import IconInstagram from '../../public/images/Icon-instagram.png'
+import IconFacebook from '../../public/images/Icon-facebook.png'
+import IconLinkedin from '../../public/images/Icon-linkedin.png'
+import IconYoutube from '../../public/images/Icon-youtube.png'
 
 export const Footer = () => {
     return (
